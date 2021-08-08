@@ -1,0 +1,197 @@
+.hero_section {
+  height: 50vh;
+  background-image: url('../images/Plants.jpg');
+  background-position: 100% 50%;
+  background-size: cover;
+}
+
+.div-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  background-color: #c4ae9c;
+}
+
+.paragraph {
+  margin-bottom: 0px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.info_section {
+  height: auto;
+  min-height: 150vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #faf2eb;
+}
+
+.doctor_block {
+  height: 70vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #fdf9f5;
+}
+
+.services_cta {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+._2_block_row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+._2_block {
+  width: 50%;
+}
+
+.heading {
+  overflow: visible;
+  font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif;
+  font-size: 48px;
+  line-height: 70px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.image {
+  max-width: 55%;
+  margin-left: 50px;
+  font-weight: 400;
+}
+
+.pink_line {
+  width: 1000px;
+  height: 0px;
+  margin: 50px auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f19e9e;
+  color: #000;
+}
+
+.image-2 {
+  max-width: 55%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer {
+  height: 60vh;
+  margin-top: 0px;
+  padding-top: 75px;
+  background-color: #deb396;
+}
+
+.heading-2 {
+  font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif;
+  font-weight: 400;
+}
+
+._30_block {
+  width: 30%;
+  margin-top: 0px;
+  padding: 20px;
+}
+
+._70_block {
+  width: 70%;
+  padding: 20px;
+}
+
+.container_sm {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+._3_block_row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+._40_block {
+  width: 40%;
+}
+
+.navbar {
+  background-color: transparent;
+  font-size: 11px;
+}
+
+.nav-menu {
+  position: static;
+}
+
+.brand {
+  position: static;
+}
+
+.container-2 {
+  display: block;
+}
+
+.heading-3 {
+  text-align: center;
+}
