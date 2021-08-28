@@ -5,7 +5,7 @@
   background-size: cover;
 }
 
-.div-block {
+.banner_block {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -157,6 +157,7 @@
   margin-left: auto;
   border-bottom: 1px solid #000;
   font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif;
+  font-size: 55px;
   line-height: 70px;
   font-weight: 400;
   text-align: center;
@@ -194,8 +195,8 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 26px;
-  margin-bottom: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 ._40_block {
@@ -206,12 +207,39 @@
 }
 
 .navbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: transparent;
   font-size: 11px;
 }
 
 .nav-menu {
   position: static;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: left;
 }
 
@@ -223,13 +251,12 @@
   display: block;
 }
 
-.directory_h2 {
-  margin-top: 20px;
-  margin-bottom: 0px;
+.hero_block_h1 {
+  margin: 20px auto 0px;
   font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif;
   font-size: 60px;
   font-weight: 400;
-  text-align: left;
+  text-align: center;
 }
 
 .footer_header {
@@ -243,7 +270,7 @@
   margin-bottom: 55px;
 }
 
-.heading-4 {
+.hero_block_h2 {
   text-align: center;
 }
 
@@ -312,8 +339,9 @@
   background-color: #faf2eb;
 }
 
-._3_block {
+._3_block_padding {
   width: 33.3%;
+  padding: 30px;
 }
 
 .text-block-2 {
@@ -496,4 +524,82 @@
   padding-top: 0px;
   padding-bottom: 50px;
   background-color: #faf2eb;
+}
+
+.home_cta {
+  display: block;
+  height: 40vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.form_section {
+  height: auto;
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #faf2eb;
+  color: #333;
+  text-decoration: none;
+}
+
+.link_block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.logo_block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+}
+
+.image-8 {
+  max-width: 45%;
+}
+
+.hero_text_block {
+  margin-top: 141px;
+}
+
+.our_practice_hero_section {
+  height: 60vh;
+  background-image: url('../images/Plants.jpg');
+  background-position: 50% 30%;
+  background-size: cover;
+}
+
+.button {
+  background-color: #fe7f6b;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.new_patients_hero_section {
+  height: 60vh;
+  background-image: url('../images/ceiling.jpeg');
+  background-position: 50% 50%;
+  background-size: cover;
 }
