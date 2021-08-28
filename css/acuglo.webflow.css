@@ -129,11 +129,11 @@
 }
 
 .pink_line {
-  width: 1000px;
+  width: 100%;
   height: 0px;
   margin: 50px auto;
-  border-style: solid;
-  border-width: 1px;
+  border-style: none none solid;
+  border-width: 0.5px;
   border-color: #f19e9e;
   color: #000;
 }
@@ -474,7 +474,7 @@
 .service_desc_para {
   margin-top: 7px;
   margin-bottom: 15px;
-  font-style: italic;
+  font-style: normal;
 }
 
 .services_price_block {
@@ -602,4 +602,111 @@
   background-image: url('../images/ceiling.jpeg');
   background-position: 50% 50%;
   background-size: cover;
+}
+
+.new_patient_form_section {
+  height: auto;
+  min-height: 0vh;
+  padding: 0px 0px 100px;
+  background-color: #faf2eb;
+  color: #333;
+  text-decoration: none;
+}
+
+._45_block {
+  width: 45%;
+}
+
+._55_block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 55%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.select-field {
+  background-color: #fff;
+}
+
+.submit-button {
+  background-color: #fe7f6b;
+}
+
+.field-label {
+  color: #000;
+}
+
+.what_to_expect_section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  margin: 0px;
+  padding: 100px 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.grey_line_sm {
+  width: 100%;
+  height: 0px;
+  margin: 50px auto;
+  border-style: none none solid;
+  border-width: 1px;
+  border-color: #adadad;
+  color: #000;
+}
+
+.waitlist_section {
+  height: auto;
+  min-height: 0vh;
+  padding: 50px 0px;
+  background-color: #faf2eb;
+  color: #333;
+  text-decoration: none;
+}
+
+.paragraph-3 {
+  padding: 0px 0px 0px 25px;
+}
+
+.button-2 {
+  background-color: #fe7f6b;
+}
+
+.contact_hero_section {
+  height: 60vh;
+  background-image: url('../images/cactus.jpg');
+  background-position: 50% 40%;
+  background-size: cover;
+}
+
+.form-block {
+  width: 100%;
+}
+
+.link-3 {
+  color: #fe7f6b;
+  text-decoration: underline;
 }
