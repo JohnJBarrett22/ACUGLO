@@ -27,7 +27,7 @@
   background-color: #c4ae9c;
 }
 
-.paragraph {
+.banner_para {
   margin-bottom: 0px;
   color: #fff;
   font-weight: 700;
@@ -105,21 +105,6 @@
   line-height: 70px;
   font-weight: 400;
   text-align: center;
-}
-
-.container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .image {
@@ -243,14 +228,6 @@
   text-align: left;
 }
 
-.brand {
-  position: static;
-}
-
-.container-2 {
-  display: block;
-}
-
 .hero_block_h1 {
   margin: 20px auto 0px;
   font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif;
@@ -298,11 +275,11 @@
   align-items: flex-start;
 }
 
-.text-block {
+.roman_numeral {
   margin-right: 65px;
 }
 
-.div-block-2 {
+.hero_h1_block {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -319,7 +296,7 @@
   border-bottom: 1px solid #000;
 }
 
-.div-block-3 {
+.roman_numeral_block {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -344,33 +321,24 @@
   padding: 30px;
 }
 
-.text-block-2 {
+.featured_text {
   font-size: 10px;
   font-weight: 700;
   text-align: center;
 }
 
-.image-3 {
+.line_divide {
   margin: 20px auto;
   text-align: left;
 }
 
-.div-block-4 {
+.line_divide_block {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin-right: auto;
   margin-left: auto;
-}
-
-.directory_h2-copy {
-  margin-top: 20px;
-  margin-bottom: 0px;
-  font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif;
-  font-size: 60px;
-  font-weight: 400;
-  text-align: center;
 }
 
 .research_link {
@@ -414,10 +382,6 @@
 .image-4 {
   margin-top: 15px;
   margin-bottom: 15px;
-}
-
-.text-block-4 {
-  color: #333;
 }
 
 .image-5 {
@@ -615,6 +579,7 @@
 
 ._45_block {
   width: 45%;
+  padding: 0px 25px 0px 0px;
 }
 
 ._55_block {
@@ -643,6 +608,8 @@
 }
 
 .submit-button {
+  margin-top: 15px;
+  margin-bottom: 15px;
   background-color: #fe7f6b;
 }
 
