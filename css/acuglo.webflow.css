@@ -39,13 +39,13 @@
   min-height: 150vh;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #faf2eb;
+  background-color: #e3dca9;
   color: #9c4b4b;
   text-decoration: none;
 }
 
 .doctor_block {
-  height: 70vh;
+  height: auto;
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #fdf9f5;
@@ -83,7 +83,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 70%;
   margin-right: 15px;
   margin-left: 15px;
   -webkit-box-orient: vertical;
@@ -152,7 +152,7 @@
   width: 30%;
   margin-top: 0px;
   padding: 25px 0px 0px;
-  border-top: 1px solid #000;
+  border-top: 1px none #000;
 }
 
 ._70_block {
@@ -357,6 +357,8 @@
 
 .paragraph-2 {
   color: #333;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .text-block-3 {
@@ -676,4 +678,31 @@
 .link-3 {
   color: #fe7f6b;
   text-decoration: underline;
+}
+
+._2_block-copy {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin-right: 15px;
+  margin-left: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  color: #333;
+}
+
+.heading-6 {
+  margin-top: 0px;
+  color: #000;
+  font-size: 34px;
+  line-height: 38px;
 }
