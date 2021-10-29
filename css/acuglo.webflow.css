@@ -355,7 +355,7 @@
   text-decoration: underline;
 }
 
-.paragraph-2 {
+.services_para {
   color: #333;
   font-size: 20px;
   line-height: 24px;
@@ -705,4 +705,10 @@
   color: #000;
   font-size: 34px;
   line-height: 38px;
+}
+
+.services_list_item {
+  color: #000;
+  font-size: 20px;
+  line-height: 24px;
 }
