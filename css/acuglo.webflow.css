@@ -24,12 +24,12 @@
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto;
   grid-template-rows: auto auto;
-  background-color: #c4ae9c;
+  background-color: #e6e6fa;
 }
 
 .banner_para {
   margin-bottom: 0px;
-  color: #fff;
+  color: #000;
   font-weight: 700;
   text-align: center;
 }
@@ -39,8 +39,8 @@
   min-height: 150vh;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #e3dca9;
-  color: #9c4b4b;
+  background-color: #e6e6fa;
+  color: #333;
   text-decoration: none;
 }
 
@@ -133,7 +133,7 @@
   height: 60vh;
   margin-top: 0px;
   padding-top: 75px;
-  background-color: #deb396;
+  background-color: #e6e8fa;
 }
 
 .heading-2 {
@@ -313,7 +313,7 @@
   min-height: 100vh;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #faf2eb;
+  background-color: #e6e6fa;
 }
 
 ._3_block_padding {
@@ -574,7 +574,7 @@
   height: auto;
   min-height: 0vh;
   padding: 0px 0px 100px;
-  background-color: #faf2eb;
+  background-color: #ffe4e1;
   color: #333;
   text-decoration: none;
 }
@@ -635,6 +635,7 @@
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
+  background-color: #d1bea8;
 }
 
 .grey_line_sm {
