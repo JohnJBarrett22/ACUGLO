@@ -142,7 +142,7 @@
   height: 60vh;
   margin-top: 0px;
   padding-top: 75px;
-  background-color: #e6e8fa;
+  background-color: #e6e6fa;
 }
 
 .heading-2 {
@@ -214,8 +214,8 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
-  font-size: 15px;
+  background-color: #e6e6fa;
+  font-size: 13px;
   font-weight: 700;
 }
 
@@ -263,7 +263,7 @@
 }
 
 .directory_section {
-  height: 90vh;
+  height: 100vh;
   background-image: url('../images/acuglo_acupuncture_hero_image.jpg');
   background-position: 50% 50%;
   background-size: cover;
@@ -728,8 +728,8 @@
 
 .acuglo_body {
   color: #362419;
-  font-size: 20px;
-  line-height: 21px;
+  font-size: 15px;
+  line-height: 22.5px;
 }
 
 .form-block-2 {
