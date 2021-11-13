@@ -52,7 +52,7 @@
   background-color: #fdf9f5;
 }
 
-.services_cta {
+.blog_section {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -265,7 +265,7 @@
   text-align: center;
 }
 
-.directory_section {
+.hero_section {
   height: 100vh;
   background-image: url('../images/acuglo_acupuncture_hero_image.jpg');
   background-position: 50% 50%;
@@ -565,7 +565,7 @@
   margin-top: 141px;
 }
 
-.our_practice_hero_section {
+.mini_hero_section {
   height: 60vh;
   background-image: url('../images/acuglo_acupuncture_plant_table.jpg');
   background-position: 50% 30%;
