@@ -499,7 +499,7 @@
   background-color: #fdf9f5;
 }
 
-.love_notes_page {
+.what_they_say_page {
   height: auto;
   min-height: 100vh;
   padding-top: 0px;
@@ -565,7 +565,7 @@
   margin-top: 141px;
 }
 
-.mini_hero_section {
+.about_us_hero_section {
   height: 60vh;
   background-image: url('../images/acuglo_acupuncture_plant_table.jpg');
   background-position: 50% 30%;
@@ -794,5 +794,12 @@
 }
 
 .section_h2 {
+  text-align: center;
+}
+
+.pre_text {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
   text-align: center;
 }
