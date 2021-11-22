@@ -594,17 +594,17 @@
   text-decoration: none;
 }
 
-._45_block {
-  width: 45%;
+._35_block {
+  width: 35%;
   padding: 0px 25px 0px 0px;
 }
 
-._55_block {
+._65_block {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 55%;
+  width: 65%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
