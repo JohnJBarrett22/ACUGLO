@@ -175,7 +175,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 1000px;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
   -webkit-box-pack: center;
@@ -571,29 +571,6 @@
   padding-bottom: 0px;
 }
 
-.cards-wrap {
-  display: -ms-grid;
-  display: grid;
-  width: 100%;
-  height: auto;
-  margin: 50px 0px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-auto-columns: 1fr;
-  grid-column-gap: 40px;
-  grid-row-gap: 0px;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
-}
-
 .card {
   position: relative;
   display: -webkit-box;
@@ -769,12 +746,14 @@
   width: 100%;
 }
 
-.flex-body {
+.card_wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   min-height: auto;
+  margin-bottom: 50px;
+  padding: 0px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -788,7 +767,7 @@
   perspective: 1200px;
 }
 
-.bake72 {
+.service_card {
   max-width: 320px;
   margin: 35px;
   padding-top: 25px;
@@ -805,21 +784,21 @@
   text-decoration: none;
 }
 
-.bake72__title {
+.service_card_title {
   margin-top: 0px;
-  color: #200c52;
-  font-size: 26px;
+  color: #362419;
+  font-size: 24px;
   line-height: 22px;
   font-weight: 700;
 }
 
-.bake72__image {
+.service_card_img {
   min-height: 260px;
   margin-top: 15px;
   margin-right: -35px;
   margin-bottom: 15px;
   border-radius: 3px;
-  background-image: url('../images/charles-AQRp2NH-O8k-unsplash_compressed.jpg');
+  background-image: url('../images/traditional_chinese_herbs.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -830,13 +809,7 @@
   transform-style: preserve-3d;
 }
 
-.bake72__price {
-  margin-bottom: 10px;
-  color: #818181;
-  font-size: 17px;
-}
-
-.bake72__button {
+.service_card_button {
   display: block;
   overflow: hidden;
   margin-top: 20px;
@@ -845,7 +818,7 @@
   padding: 12px 30px 15px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  background-color: #0cd33e;
+  background-color: #95b36c;
   -webkit-transition: background-color 200ms ease;
   transition: background-color 200ms ease;
   color: #fff;
@@ -855,8 +828,10 @@
   text-align: center;
 }
 
-.bake72__button:hover {
-  background-color: #0ba532;
+.service_card_button:hover {
+  background-color: salmon;
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
 }
 
 .bake72__button__text {
@@ -873,12 +848,13 @@
     height: auto;
   }
 
-  .main_container {
-    width: 90vw;
+  .nav-menu {
+    display: block;
+    width: 90%;
   }
 
-  .cards-wrap {
-    grid-column-gap: 24px;
+  .main_container {
+    width: 90vw;
   }
 
   .card-subtitle {
@@ -894,26 +870,21 @@
   }
 
   .menu-button {
+    width: 10%;
     margin-right: 0px;
     margin-left: auto;
     text-align: center;
   }
 
-  .flex-body {
+  .card_wrapper {
     padding-top: 90px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .cards-wrap {
-    grid-column-gap: 0px;
-    grid-row-gap: 32px;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
-  }
-
   .card-subtitle {
     margin-bottom: 4px;
   }
@@ -922,13 +893,34 @@
     margin-top: 2px;
   }
 
-  .bake72 {
+  .card_wrapper {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .service_card {
     width: 300px;
     max-width: 100%;
   }
 }
 
 @media screen and (max-width: 479px) {
+  .blog_section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
   ._30_block {
     width: 100%;
     text-align: center;
@@ -955,6 +947,52 @@
     text-align: center;
   }
 
+  .nav-menu {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .services_section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .link_block {
+    display: none;
+  }
+
+  .logo_block {
+    display: block;
+    width: 50%;
+  }
+
+  .image-8 {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
   .paragraph-4 {
     text-align: center;
   }
@@ -970,11 +1008,15 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .card-image {
@@ -985,8 +1027,29 @@
     text-align: center;
   }
 
-  .bake72 {
+  .menu-button {
+    width: 20%;
+  }
+
+  .card_wrapper {
+    width: 100%;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .service_card {
     margin-right: 20px;
     margin-left: 20px;
+  }
+
+  .link-block {
+    display: block;
+  }
+
+  .link-block.w--current {
+    width: 100%;
   }
 }
