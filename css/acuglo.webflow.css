@@ -78,16 +78,6 @@
   color: #333;
 }
 
-.pink_line {
-  width: 100%;
-  height: 0px;
-  margin: 50px auto;
-  border-style: none none solid;
-  border-width: 0.5px;
-  border-color: #f19e9e;
-  color: #000;
-}
-
 .footer {
   height: 60vh;
   margin-top: 0px;
@@ -117,7 +107,7 @@
 
 ._70_block {
   width: 70%;
-  padding: 20px;
+  padding: 20px 20px 20px 75px;
 }
 
 .container_sm {
@@ -230,11 +220,6 @@
   padding: 30px;
 }
 
-.line_divide {
-  margin: 20px auto;
-  text-align: left;
-}
-
 .line_divide_block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -255,26 +240,6 @@
   margin-bottom: 10px;
   color: #333;
   font-size: 16px;
-}
-
-.image-4 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.image-5 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.image-6 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.image-7 {
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 
 .service_desc_para {
@@ -363,7 +328,7 @@
 }
 
 .image-8 {
-  max-width: 65%;
+  max-width: 45%;
 }
 
 .hero_text_block {
@@ -419,10 +384,6 @@
   align-items: center;
 }
 
-.select-field {
-  background-color: #fff;
-}
-
 .submit-button {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -464,18 +425,13 @@
 
 .contact_hero_section {
   height: 60vh;
-  background-image: url('../images/aculgo_acupuncture_colors.jpg');
+  background-image: url('../images/relaxing_forest_pathway.jpg');
   background-position: 50% 40%;
   background-size: cover;
 }
 
 .form-block {
   width: 100%;
-}
-
-.link-3 {
-  color: #fe7f6b;
-  text-decoration: underline;
 }
 
 .heading-6 {
@@ -501,14 +457,6 @@
   width: 90%;
 }
 
-.hero_h1 {
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-  color: #362419;
-  font-size: 55px;
-  line-height: 65px;
-  text-align: center;
-}
-
 .italic-text-2 {
   font-size: 14px;
 }
@@ -518,10 +466,7 @@
 }
 
 ._2_block_row_hero {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   height: 92.5vh;
   margin: 0px 50px;
   -webkit-box-orient: horizontal;
@@ -553,8 +498,8 @@
 
 .our_blog_hero_section {
   height: 60vh;
-  background-image: url('../images/abstract_background_acuglo.jpg');
-  background-position: 50% 50%;
+  background-image: url('../images/acuglo_blog_relaxation.jpeg');
+  background-position: 50% 85%;
   background-size: cover;
 }
 
@@ -677,7 +622,8 @@
 }
 
 .nav-link {
-  color: #5a341d;
+  color: #4f311c;
+  font-size: 14px;
 }
 
 .nav-link.w--current {
@@ -792,13 +738,13 @@
   font-weight: 700;
 }
 
-.service_card_img {
+.service_card_img_herbs {
   min-height: 260px;
   margin-top: 15px;
   margin-right: -35px;
   margin-bottom: 15px;
   border-radius: 3px;
-  background-image: url('../images/traditional_chinese_herbs.jpg');
+  background-image: url('../images/acuglo_herbal_medicine.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -837,6 +783,204 @@
 .bake72__button__text {
   padding-top: 12px;
   padding-bottom: 15px;
+}
+
+.nav-link-2 {
+  color: #4f311c;
+  font-size: 14px;
+}
+
+.nav-link-2.w--current {
+  color: #0d98b9;
+}
+
+.nav-link-3 {
+  color: #4f311c;
+  font-size: 14px;
+}
+
+.nav-link-3.w--current {
+  color: #0d98b9;
+}
+
+.nav-link-4 {
+  color: #4f311c;
+  font-size: 14px;
+}
+
+.nav-link-4.w--current {
+  color: #0d98b9;
+  font-size: 14px;
+}
+
+.nav-link-5 {
+  color: #4f311c;
+  font-size: 14px;
+}
+
+.nav-link-5.w--current {
+  color: #0d98b9;
+}
+
+.nav-link-6 {
+  color: #4f311c;
+  font-size: 14px;
+}
+
+.nav-link-6.w--current {
+  color: #0d98b9;
+}
+
+.nav-link-7 {
+  color: #4f311c;
+  font-size: 14px;
+}
+
+.nav-link-7.w--current {
+  color: #0d98b9;
+}
+
+.service_card_img_acupuncture {
+  min-height: 260px;
+  margin-top: 15px;
+  margin-right: -35px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background-image: url('../images/acuglo_acupuncture.jpg');
+  background-position: 50% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
+  -webkit-transform: translate3d(0px, 0px, 20px);
+  transform: translate3d(0px, 0px, 20px);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.service_card_img_cupping {
+  min-height: 260px;
+  margin-top: 15px;
+  margin-right: -35px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background-image: url('../images/acuglo_cupping_treatment.jpg');
+  background-position: 100% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
+  -webkit-transform: translate3d(0px, 0px, 20px);
+  transform: translate3d(0px, 0px, 20px);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.service_card_img_moxa {
+  min-height: 260px;
+  margin-top: 15px;
+  margin-right: -35px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background-image: url('../images/acuglo_moxibustion.jpg');
+  background-position: 10% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
+  -webkit-transform: translate3d(0px, 0px, 20px);
+  transform: translate3d(0px, 0px, 20px);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.service_card_img_auricular {
+  min-height: 260px;
+  margin-top: 15px;
+  margin-right: -35px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background-image: url('../images/acuglo_auriculotherapy.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
+  -webkit-transform: translate3d(0px, 0px, 20px);
+  transform: translate3d(0px, 0px, 20px);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.service_card_img_electrostim {
+  min-height: 260px;
+  margin-top: 15px;
+  margin-right: -35px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background-image: url('../images/Untitled-design-1.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
+  -webkit-transform: translate3d(0px, 0px, 20px);
+  transform: translate3d(0px, 0px, 20px);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.service_card_img_telehealth {
+  min-height: 260px;
+  margin-top: 15px;
+  margin-right: -35px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background-image: url('../images/acuglo_telehealth.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
+  -webkit-transform: translate3d(0px, 0px, 20px);
+  transform: translate3d(0px, 0px, 20px);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.service_card_img_facial {
+  min-height: 260px;
+  margin-top: 15px;
+  margin-right: -35px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background-image: url('../images/acuglo_facial_acupuncture.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
+  -webkit-transform: translate3d(0px, 0px, 20px);
+  transform: translate3d(0px, 0px, 20px);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.service_card_img_scalp {
+  min-height: 260px;
+  margin-top: 15px;
+  margin-right: -35px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background-image: url('../images/AcuGlo_Logo_1_.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
+  -webkit-transform: translate3d(0px, 0px, 20px);
+  transform: translate3d(0px, 0px, 20px);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.testimonials_hero_section {
+  height: 60vh;
+  background-image: url('../images/patient_testimonials_aculgo.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 @media screen and (max-width: 991px) {
