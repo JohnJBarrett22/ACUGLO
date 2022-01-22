@@ -1,3 +1,7 @@
+.w-form-formrecaptcha {
+  margin-bottom: 8px;
+}
+
 .w-commerce-commercecheckoutformcontainer {
   width: 100%;
   min-height: 100vh;
@@ -1907,10 +1911,6 @@
 
 .hero_section {
   height: 100vh;
-  background-image: url('../images/acuglo_acupuncture_hero_image.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .services_section {
@@ -2702,6 +2702,22 @@
   font-size: 14px;
 }
 
+.background-video {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 991px) {
   .blog_section {
     padding-top: 100px;
@@ -2744,6 +2760,7 @@
   }
 
   .card_wrapper {
+    height: auto;
     margin-bottom: 0px;
     padding-top: 0px;
     -webkit-flex-wrap: wrap;
@@ -2769,6 +2786,10 @@
     align-items: center;
   }
 
+  ._2_block {
+    width: 100%;
+  }
+
   ._30_block {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2791,8 +2812,32 @@
     padding-left: 20px;
   }
 
+  ._3_block_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
   ._40_block {
     text-align: left;
+  }
+
+  ._3_block_padding {
+    width: 100%;
+  }
+
+  ._35_block {
+    width: 100%;
+  }
+
+  ._65_block {
+    width: 100%;
   }
 
   .card-subtitle {
@@ -2814,7 +2859,11 @@
     max-width: 100%;
   }
 
-  .image-10 {
+  .image-9 {
+    margin-left: 0px;
+  }
+
+  .about_us_image_block {
     max-width: 75%;
     margin-right: auto;
     margin-left: auto;
@@ -2920,6 +2969,10 @@
     display: block;
     width: 100%;
     max-width: 100%;
+  }
+
+  ._65_block {
+    width: 100%;
   }
 
   .paragraph-4 {
