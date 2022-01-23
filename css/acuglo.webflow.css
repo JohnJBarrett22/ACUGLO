@@ -1911,6 +1911,9 @@
 
 .hero_section {
   height: 100vh;
+  background-image: url('../images/acuglo_acupuncture_hero_image.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 .services_section {
@@ -2172,7 +2175,10 @@
 }
 
 ._2_block_row_hero {
-  display: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 92.5vh;
   margin: 0px 50px;
   -webkit-box-orient: horizontal;
@@ -2703,10 +2709,7 @@
 }
 
 .background-video {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   height: 100vh;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -2716,6 +2719,11 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.background-video-2 {
+  position: static;
+  z-index: 99;
 }
 
 @media screen and (max-width: 991px) {
