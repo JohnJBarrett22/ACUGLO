@@ -2019,10 +2019,16 @@
   display: -ms-flexbox;
   display: flex;
   width: 20%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .image-8 {
-  max-width: 45%;
+  max-width: 35%;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
 .hero_text_block {
@@ -2501,6 +2507,17 @@
   padding-bottom: 15px;
 }
 
+.link-block.w--current {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .nav-link-2 {
   color: #4f311c;
   font-size: 14px;
@@ -2963,10 +2980,32 @@
   .nav-menu {
     display: block;
     width: 90%;
+    margin-left: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    background-color: #862727;
   }
 
   .what_they_say_page {
     padding-top: 100px;
+  }
+
+  .logo_block {
+    width: 20%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .image-8 {
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 7px;
   }
 
   .main_container {
@@ -3003,6 +3042,17 @@
 
   .service_card {
     display: block;
+  }
+
+  .link-block.w--current {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   ._25_block {
@@ -3273,8 +3323,13 @@
   }
 
   .logo_block {
-    display: block;
-    width: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20%;
+    height: 100%;
+    min-height: 100%;
   }
 
   .image-8 {
@@ -3344,7 +3399,7 @@
   }
 
   .link-block.w--current {
-    width: 100%;
+    width: 75%;
   }
 
   ._25_block {
