@@ -1710,8 +1710,8 @@
 
 .services_hero_section {
   height: 60vh;
-  background-image: url('../images/yellow_bkacground_acuglo.jpeg');
-  background-position: 50% 10%;
+  background-image: url('../images/acuglo_birds.jpg');
+  background-position: 50% 38%;
   background-size: cover;
 }
 
@@ -1768,7 +1768,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
+  width: 50%;
   margin-right: 15px;
   margin-left: 15px;
   -webkit-box-orient: vertical;
@@ -1905,7 +1905,7 @@
 
 .hero_section {
   height: 100vh;
-  background-image: url('../images/acuglo_acupuncture_hero_image.jpg');
+  background-image: url('../images/clouds_acuglo.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -1947,8 +1947,11 @@
   font-weight: 700;
 }
 
-.new_patient_cta {
-  display: block;
+.newsletter_cta {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 40vh;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -2037,8 +2040,8 @@
 
 .about_us_hero_section {
   height: 60vh;
-  background-image: url('../images/about_us_background_acuglo.jpg');
-  background-position: 50% 30%;
+  background-image: url('../images/acuglo_flowers.jpg');
+  background-position: 50% 85%;
   background-size: cover;
 }
 
@@ -2547,6 +2550,7 @@
 }
 
 .nav-link-5 {
+  display: none;
   color: #4f311c;
   font-size: 14px;
 }
@@ -2596,13 +2600,13 @@
   margin-right: -35px;
   margin-bottom: 15px;
   border-radius: 3px;
-  background-image: url('../images/acuglo_cupping_treatment.jpg');
-  background-position: 100% 50%;
+  background-image: url('../images/acuglo_cupping.jpg');
+  background-position: 50% 67.5%;
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
-  -webkit-transform: translate3d(0px, 0px, 20px);
-  transform: translate3d(0px, 0px, 20px);
+  -webkit-transform: rotate(0deg) translate3d(0px, 0px, 20px);
+  transform: rotate(0deg) translate3d(0px, 0px, 20px);
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
@@ -2647,7 +2651,7 @@
   margin-right: -35px;
   margin-bottom: 15px;
   border-radius: 3px;
-  background-image: url('../images/Untitled-design-1.png');
+  background-image: url('../images/acuglo_electro_lypolisis.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2698,8 +2702,8 @@
   margin-right: -35px;
   margin-bottom: 15px;
   border-radius: 3px;
-  background-image: url('../images/AcuGlo_Logo_1_.jpg');
-  background-position: 50% 50%;
+  background-image: url('../images/acuglo_scalp_acupuncture.jpg');
+  background-position: 20% 50%;
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
@@ -2962,6 +2966,110 @@
 .main_h2 {
   font-size: 34px;
   line-height: 1.1em;
+}
+
+.heading-8 {
+  margin-top: 1px;
+  margin-bottom: 0px;
+}
+
+.heading-9 {
+  margin-top: 0px;
+  margin-bottom: 375px;
+  font-family: 'Droid Serif', serif;
+  font-size: 45px;
+  line-height: 65px;
+  font-weight: 400;
+}
+
+._2_block_sada {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35%;
+  margin-right: 15px;
+  margin-left: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #333;
+}
+
+.form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.text-field {
+  width: 275px;
+  height: 45px;
+}
+
+.newsletter_button {
+  height: 45px;
+  margin-left: 25px;
+}
+
+.newsletter_h3 {
+  color: #362419;
+  font-size: 34px;
+  line-height: 1.1em;
+  text-align: center;
+}
+
+.newsletter_form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.text-block-7 {
+  text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .about_us_hero_section {
+    background-position: 50% 75%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .about_us_hero_section {
+    background-position: 50% 75%;
+  }
+
+  .service_card_img_electrostim {
+    background-image: url('../images/acuglo_electro_lypolisis.jpg');
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -3243,6 +3351,10 @@
   .blog_feed_section {
     padding-top: 75px;
     padding-bottom: 75px;
+  }
+
+  ._2_block_sada {
+    width: 100%;
   }
 }
 
