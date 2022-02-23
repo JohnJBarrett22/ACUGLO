@@ -3280,8 +3280,41 @@
   align-items: flex-start;
 }
 
+.full_product_collection_wrapper {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.product_space {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 52px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.products_hero_section {
+  height: 60vh;
+  background-image: url('../images/acuglo_flowers.jpg');
+  background-position: 50% 85%;
+  background-size: cover;
+}
+
 @media screen and (min-width: 1280px) {
   .about_us_hero_section {
+    background-position: 50% 75%;
+  }
+
+  .products_hero_section {
     background-position: 50% 75%;
   }
 }
@@ -3293,6 +3326,10 @@
 
   .service_card_img_electrostim {
     background-image: url('../images/acuglo_electro_lypolisis.jpg');
+  }
+
+  .products_hero_section {
+    background-position: 50% 75%;
   }
 }
 
@@ -4121,6 +4158,36 @@
 }
 
 #w-node-_688588ba-21c1-7cf6-f8d9-25dd7b53f6ef-33be5217 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+  -ms-grid-column-align: center;
+  justify-self: center;
+  -ms-grid-row-align: start;
+  align-self: start;
+}
+
+#w-node-e8f0b456-9a13-0639-1383-c4f1aa62d539-2926ed99 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+  -ms-grid-column-align: center;
+  justify-self: center;
+  -ms-grid-row-align: start;
+  align-self: start;
+}
+
+#w-node-e8f0b456-9a13-0639-1383-c4f1aa62d53b-2926ed99 {
   -ms-grid-column: span 1;
   grid-column-start: span 1;
   -ms-grid-column-span: 1;
