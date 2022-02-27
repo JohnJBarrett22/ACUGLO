@@ -3897,7 +3897,7 @@
 
 .products_hero_section {
   height: 60vh;
-  background-image: url('../images/acuglo_flowers.jpg');
+  background-image: url('../images/acuglo_acupuncture_yellow_leaf.jpg');
   background-position: 50% 85%;
   background-size: cover;
 }
@@ -4031,7 +4031,7 @@
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    background-color: #862727;
+    background-color: #f8f6f1;
   }
 
   .what_they_say_page {
@@ -4490,8 +4490,14 @@
   }
 
   .nav-menu {
+    position: absolute;
+    left: 0px;
     display: block;
-    width: 0%;
+    width: 25%;
+    height: auto;
+    min-height: 0%;
+    margin-right: 0px;
+    margin-left: 0px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -4500,6 +4506,7 @@
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    background-color: #f8f6f1;
   }
 
   .hero_block_h1 {
@@ -4530,7 +4537,8 @@
   }
 
   .link_block {
-    display: none;
+    display: block;
+    color: #f8f6f1;
   }
 
   .logo_block {
@@ -4606,6 +4614,10 @@
   .menu-button {
     width: 20%;
     margin-left: 0px;
+  }
+
+  .menu-button.w--open {
+    background-color: #f8f6f1;
   }
 
   .card_wrapper {
@@ -4826,6 +4838,10 @@
 
   .icon {
     margin-right: 0px;
+  }
+
+  .icon-2 {
+    color: #362419;
   }
 }
 
