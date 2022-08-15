@@ -2481,6 +2481,7 @@
 
 .services_hero_section {
   height: 60vh;
+  padding-top: 0px;
   background-image: url('../images/acuglo_birds.jpg');
   background-position: 50% 38%;
   background-size: cover;
@@ -2524,6 +2525,13 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -2535,19 +2543,15 @@
 }
 
 ._2_block {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   width: 50%;
-  margin-top: 0px;
-  margin-right: 15px;
-  margin-left: 15px;
-  -webkit-box-orient: vertical;
+  height: auto;
+  margin: 0px 15px;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -2557,6 +2561,14 @@
   -ms-flex-align: center;
   align-items: center;
   color: #333;
+}
+
+._2_block.photo_block {
+  height: 375px;
+  background-image: url('../images/microneedling-collagen-induction-therapy.jpg');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .footer {
@@ -2634,16 +2646,19 @@
 
 .hero_block_h1 {
   margin: 20px auto 0px;
-  font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif;
+  font-family: Orkney, sans-serif;
+  color: #fff;
   font-size: 72px;
   line-height: 1.1em;
   font-weight: 400;
   text-align: center;
+  text-shadow: 4px 4px 0 #362419;
 }
 
 .footer_header {
   margin-top: 15px;
   margin-bottom: 5px;
+  font-family: Orkney, sans-serif;
   color: #362419;
   font-size: 14px;
   font-weight: 700;
@@ -2663,7 +2678,7 @@
 
 .services_section {
   height: auto;
-  min-height: 100vh;
+  min-height: 0vh;
   padding-top: 10vh;
   padding-bottom: 10vh;
   background-color: #f8f6f1;
@@ -2677,7 +2692,8 @@
 }
 
 .services_para {
-  color: #333;
+  display: block;
+  color: #362419;
   font-size: 16px;
   line-height: 24px;
 }
@@ -2700,8 +2716,8 @@
   display: -ms-flexbox;
   display: flex;
   height: 40vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -2724,8 +2740,8 @@
 .map_cta {
   display: block;
   height: auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -2739,9 +2755,8 @@
 
 .form_section {
   height: auto;
-  min-height: 100vh;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   background-color: #f8f6f1;
   color: #333;
   text-decoration: none;
@@ -2775,21 +2790,13 @@
   justify-content: center;
 }
 
-.nav_logo_image {
-  display: none;
-  max-width: 25%;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  margin-left: 35px;
-  padding-left: 0px;
-}
-
 .hero_text_block {
-  margin-top: 141px;
+  margin-top: 155px;
 }
 
 .about_us_hero_section {
   height: 60vh;
+  padding-top: 0px;
   background-image: url('../images/acuglo_flowers.jpg');
   background-position: 50% 85%;
   background-size: cover;
@@ -2813,7 +2820,9 @@
 
 ._35_block {
   width: 35%;
-  padding: 0px 25px 0px 0px;
+  padding: 0px 25px 25px;
+  background-color: #f8f6f1;
+  color: #362419;
 }
 
 ._65_block {
@@ -2822,6 +2831,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 65%;
+  padding: 0px 25px 25px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -2831,10 +2841,10 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .submit-button {
@@ -2889,13 +2899,14 @@
 
 .heading-6 {
   margin-top: 0px;
-  color: #000;
+  font-family: Orkney, sans-serif;
+  color: #362419;
   font-size: 34px;
   line-height: 38px;
 }
 
 .services_list_item {
-  color: #000;
+  color: #362419;
   font-size: 16px;
   line-height: 24px;
 }
@@ -2911,15 +2922,6 @@
 
 .form-block-2 {
   width: 90%;
-}
-
-.italic-text-2 {
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.paragraph-4 {
-  font-size: 14px;
 }
 
 ._2_block_row_hero {
@@ -2945,6 +2947,7 @@
 }
 
 .section_h2 {
+  font-family: Orkney, sans-serif;
   color: #362419;
   font-size: 44px;
   line-height: 1.1em;
@@ -2952,10 +2955,13 @@
 }
 
 .pre_text {
+  font-family: Orkney, sans-serif;
+  color: #fff;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
+  text-shadow: 2px 2px 0 #362419;
 }
 
 .our_blog_hero_section {
@@ -2976,6 +2982,7 @@
   display: block;
   width: 90vw;
   max-width: 1200px;
+  min-height: 0vh;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 0px;
@@ -3031,36 +3038,12 @@
   color: #9b673c;
 }
 
-.italic-text-5 {
-  color: #362419;
-  font-style: normal;
-  text-decoration: none;
-}
-
-.link-6 {
-  text-decoration: none;
-}
-
 .link-8 {
   color: #362419;
   text-decoration: none;
 }
 
-.italic-text-7 {
-  font-style: normal;
-}
-
 .link-9 {
-  color: #362419;
-  text-decoration: none;
-}
-
-.link-10 {
-  color: #362419;
-  text-decoration: none;
-}
-
-.link-11 {
   color: #362419;
   text-decoration: none;
 }
@@ -3100,10 +3083,10 @@
 }
 
 .service_card {
-  max-width: 320px;
-  margin: 0px 35px;
+  width: 22%;
+  margin: 25px;
   padding: 25px 25px 0px;
-  border-radius: 5px;
+  border-radius: 20px;
   background-color: #fff;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.51);
   -webkit-perspective: 1200px;
@@ -3115,24 +3098,25 @@
 }
 
 .service_card_title {
+  height: 60px;
   margin-top: 0px;
+  font-family: Orkney, sans-serif;
   color: #362419;
   font-size: 24px;
-  line-height: 22px;
+  line-height: 24px;
   font-weight: 700;
 }
 
 .service_card_img_herbs {
-  min-height: 260px;
+  min-height: 175px;
   margin-top: 15px;
-  margin-right: -35px;
+  margin-right: 0px;
   margin-bottom: 15px;
   border-radius: 3px;
   background-image: url('../images/acuglo_herbal_medicine.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
   -webkit-transform: translate3d(0px, 0px, 20px);
   transform: translate3d(0px, 0px, 20px);
   -webkit-transform-style: preserve-3d;
@@ -3201,16 +3185,15 @@
 }
 
 .service_card_img_acupuncture {
-  min-height: 260px;
+  min-height: 175px;
   margin-top: 15px;
-  margin-right: -35px;
+  margin-right: 0px;
   margin-bottom: 15px;
   border-radius: 3px;
   background-image: url('../images/acuglo_acupuncture.jpg');
   background-position: 50% 0%;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
   -webkit-transform: translate3d(0px, 0px, 20px);
   transform: translate3d(0px, 0px, 20px);
   -webkit-transform-style: preserve-3d;
@@ -3218,16 +3201,15 @@
 }
 
 .service_card_img_cupping {
-  min-height: 260px;
+  min-height: 175px;
   margin-top: 15px;
-  margin-right: -35px;
+  margin-right: 0px;
   margin-bottom: 15px;
   border-radius: 3px;
   background-image: url('../images/acuglo_cupping.jpg');
   background-position: 50% 67.5%;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
   -webkit-transform: rotate(0deg) translate3d(0px, 0px, 20px);
   transform: rotate(0deg) translate3d(0px, 0px, 20px);
   -webkit-transform-style: preserve-3d;
@@ -3235,16 +3217,15 @@
 }
 
 .service_card_img_moxa {
-  min-height: 260px;
+  min-height: 175px;
   margin-top: 15px;
-  margin-right: -35px;
+  margin-right: -1px;
   margin-bottom: 15px;
   border-radius: 3px;
   background-image: url('../images/acuglo_moxibustion.jpg');
   background-position: 10% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
   -webkit-transform: translate3d(0px, 0px, 20px);
   transform: translate3d(0px, 0px, 20px);
   -webkit-transform-style: preserve-3d;
@@ -3252,16 +3233,15 @@
 }
 
 .service_card_img_auricular {
-  min-height: 260px;
+  min-height: 175px;
   margin-top: 15px;
-  margin-right: -35px;
+  margin-right: 0px;
   margin-bottom: 15px;
   border-radius: 3px;
   background-image: url('../images/acuglo_auriculotherapy.png');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
   -webkit-transform: translate3d(0px, 0px, 20px);
   transform: translate3d(0px, 0px, 20px);
   -webkit-transform-style: preserve-3d;
@@ -3269,16 +3249,15 @@
 }
 
 .service_card_img_electrostim {
-  min-height: 260px;
+  min-height: 175px;
   margin-top: 15px;
-  margin-right: -35px;
+  margin-right: 0px;
   margin-bottom: 15px;
   border-radius: 3px;
   background-image: url('../images/acuglo_electro_lypolisis.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
   -webkit-transform: translate3d(0px, 0px, 20px);
   transform: translate3d(0px, 0px, 20px);
   -webkit-transform-style: preserve-3d;
@@ -3286,16 +3265,15 @@
 }
 
 .service_card_img_telehealth {
-  min-height: 260px;
+  min-height: 175px;
   margin-top: 15px;
-  margin-right: -35px;
+  margin-right: 0px;
   margin-bottom: 15px;
   border-radius: 3px;
   background-image: url('../images/acuglo_telehealth.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
   -webkit-transform: translate3d(0px, 0px, 20px);
   transform: translate3d(0px, 0px, 20px);
   -webkit-transform-style: preserve-3d;
@@ -3303,16 +3281,15 @@
 }
 
 .service_card_img_facial {
-  min-height: 260px;
+  min-height: 175px;
   margin-top: 15px;
-  margin-right: -35px;
+  margin-right: 0px;
   margin-bottom: 15px;
   border-radius: 3px;
   background-image: url('../images/acuglo_facial_acupuncture.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
   -webkit-transform: translate3d(0px, 0px, 20px);
   transform: translate3d(0px, 0px, 20px);
   -webkit-transform-style: preserve-3d;
@@ -3320,16 +3297,15 @@
 }
 
 .service_card_img_scalp {
-  min-height: 260px;
+  min-height: 175px;
   margin-top: 15px;
-  margin-right: -35px;
+  margin-right: 0px;
   margin-bottom: 15px;
   border-radius: 3px;
   background-image: url('../images/acuglo_scalp_acupuncture.jpg');
   background-position: 20% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.48);
   -webkit-transform: translate3d(0px, 0px, 20px);
   transform: translate3d(0px, 0px, 20px);
   -webkit-transform-style: preserve-3d;
@@ -3350,13 +3326,16 @@
 ._25_block {
   width: 25%;
   margin-top: 0px;
+  margin-right: 3px;
+  margin-left: 3px;
   padding: 0px;
   border-top: 1px none #000;
   font-size: 14px;
 }
 
 .heading-7 {
-  font-family: 'Droid Serif', serif;
+  font-family: Orkney, sans-serif;
+  color: #362419;
   font-size: 30px;
   line-height: 1.1em;
   font-weight: 400;
@@ -3391,7 +3370,7 @@
 }
 
 .about_section {
-  height: 50vh;
+  height: auto;
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
@@ -3404,144 +3383,7 @@
 .product_section {
   padding-top: 10vh;
   padding-bottom: 10vh;
-}
-
-.scrolling-collection-wrap {
-  width: 100%;
-  height: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.post-collection {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.post-item {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 30%;
-  height: 280px;
-  margin: 18px 15px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  border-radius: 5px;
-  box-shadow: 0 30px 16px -20px rgba(0, 0, 0, 0.27);
-  -webkit-transition: box-shadow 200ms ease, -webkit-transform 200ms ease;
-  transition: box-shadow 200ms ease, -webkit-transform 200ms ease;
-  transition: box-shadow 200ms ease, transform 200ms ease;
-  transition: box-shadow 200ms ease, transform 200ms ease, -webkit-transform 200ms ease;
-}
-
-.post-item:hover {
-  box-shadow: 0 9px 19px 2px rgba(0, 0, 0, 0.1);
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-.post-item:active {
-  box-shadow: none;
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-}
-
-.post-image {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.card-overlay {
-  position: absolute;
-  z-index: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.48);
-}
-
-.card-heading {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  right: auto;
-  bottom: auto;
-  margin-top: 0px;
-  padding-right: 38px;
-  color: #f8f8f8;
-  font-size: 1.3rem;
-  line-height: 1.2;
-  font-weight: 700;
-}
-
-.category-tag {
-  position: absolute;
-  left: auto;
-  top: auto;
-  right: -3%;
-  bottom: -2%;
-  padding: 11px 12px;
-  background-color: #584ffd;
-  color: #fff;
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-.text-block-6 {
-  font-size: 0.7rem;
-}
-
-.autor-text {
-  position: absolute;
-  left: 10px;
-  top: auto;
-  right: auto;
-  bottom: 20px;
-  color: #fff;
-  font-size: 0.9rem;
-  font-weight: 400;
+  border-radius: 20px;
 }
 
 .blog_feed_section {
@@ -3560,6 +3402,7 @@
 }
 
 .main_h2 {
+  font-family: Orkney, sans-serif;
   font-size: 34px;
   line-height: 1.1em;
 }
@@ -3584,10 +3427,13 @@
 .newsletter_button {
   height: 45px;
   margin-left: 25px;
+  border-radius: 20px;
   background-color: #9b673c;
+  font-weight: 700;
 }
 
 .newsletter_h3 {
+  font-family: Orkney, sans-serif;
   color: #362419;
   font-size: 34px;
   line-height: 1.1em;
@@ -3621,38 +3467,14 @@
   padding-bottom: 100px;
 }
 
-.collection-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 0px;
-  margin-left: 0px;
-  padding: 25px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: transparent;
-}
-
 .product_preview_h3 {
+  font-family: Orkney, sans-serif;
   text-align: center;
 }
 
 .product_h1 {
   margin-top: 0px;
   text-align: left;
-}
-
-.product_grid {
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
 }
 
 .product_image {
@@ -3671,22 +3493,10 @@
   padding: 0px 0px 0px 25px;
 }
 
-.quantity {
-  display: none;
-}
-
-.select-field {
-  display: none;
-}
-
 .related_products_section {
   padding-top: 10vh;
   padding-bottom: 10vh;
   background-color: #f8f6f1;
-}
-
-.add-to-cart-button {
-  background-color: #9b673c;
 }
 
 .add-to-cart-button-2 {
@@ -3694,7 +3504,7 @@
 }
 
 .hero_logo {
-  max-width: 70%;
+  max-width: 45%;
 }
 
 .nav_logo_as_text_block {
@@ -3706,14 +3516,11 @@
 
 .heading-10 {
   margin-bottom: 425px;
-  font-family: 'Droid Serif', serif;
+  font-family: Orkney, sans-serif;
+  color: #362419;
   font-size: 2.5em;
   line-height: 1.5em;
   font-weight: 400;
-}
-
-.heading-11 {
-  text-align: center;
 }
 
 .quantity-2 {
@@ -3725,16 +3532,29 @@
 }
 
 .product_preview_add_to_cart_button {
+  border-radius: 20px;
   background-color: #9b673c;
+  font-weight: 700;
+}
+
+.product_grid_block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .add-to-cart {
   margin-top: auto;
 }
 
-.div-block {
-  width: 350px;
-  height: 350px;
+.product_image_block {
+  width: 300px;
+  height: 300px;
   background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
   background-position: 50% 50%;
   background-size: cover;
@@ -3742,11 +3562,16 @@
 }
 
 .product {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 30%;
+  margin-right: 25px;
   margin-bottom: 0px;
+  margin-left: 25px;
+  padding: 15px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3756,6 +3581,9 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  border-radius: 20px;
+  background-color: #f8f6f1;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.51);
 }
 
 .footer_text_block {
@@ -3790,24 +3618,13 @@
   text-decoration: none;
 }
 
-.link_white {
-  color: #000;
-  text-decoration: none;
-}
-
-.link_white:hover {
-  color: #3898ec;
-  font-weight: 700;
-}
-
 .product_preview_price {
   color: #362419;
   font-weight: 700;
 }
 
 .product_collection_wrapper {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  width: 100%;
 }
 
 .text-block-9 {
@@ -3837,25 +3654,9 @@
   text-decoration: underline;
 }
 
-.tab-link-tab-2 {
-  background-color: #fff;
-}
-
-.tab-link-tab-3 {
-  background-color: #fff;
-}
-
 .tab_text {
   font-weight: 700;
   text-align: center;
-}
-
-.text-block-10 {
-  font-weight: 700;
-}
-
-.text-block-11 {
-  font-weight: 700;
 }
 
 ._2_block_row_horizontal {
@@ -3897,7 +3698,7 @@
 
 .products_hero_section {
   height: 60vh;
-  background-image: url('../images/acuglo_acupuncture_yellow_leaf.jpg');
+  background-image: url('../images/seaside-rocks-1519618.jpg');
   background-position: 50% 85%;
   background-size: cover;
 }
@@ -3946,10 +3747,6 @@
   background-color: #f8f6f1;
 }
 
-.div-block-2 {
-  width: 20%;
-}
-
 .cart_block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3963,6 +3760,7 @@
 }
 
 .cart-button {
+  border-radius: 20px;
   background-color: #9b673c;
 }
 
@@ -3983,6 +3781,773 @@
   margin-bottom: 0px;
   color: #362419;
   text-decoration: none;
+}
+
+.legal_block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.blog_card_h3 {
+  height: 80px;
+  font-family: Orkney, sans-serif;
+  color: #362419;
+  text-decoration: none;
+}
+
+.home_link_block {
+  padding: 25px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.51);
+  text-decoration: none;
+}
+
+.blog_summary {
+  margin-top: 10px;
+  color: #362419;
+}
+
+.blog_page {
+  min-height: 100vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.blog_container {
+  display: block;
+  width: 90vw;
+  max-width: 800px;
+  min-height: 0vh;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 0px;
+  text-align: left;
+}
+
+.heading-13 {
+  font-family: Orkney, sans-serif;
+  text-align: center;
+}
+
+.blog_main_img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.text-block-14 {
+  font-weight: 700;
+  text-align: center;
+}
+
+.blog-collection {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.blog_image {
+  height: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.blog_page_link_block {
+  padding: 25px;
+  background-color: #f8f6f1;
+  text-decoration: none;
+}
+
+.instagram_page {
+  min-height: 100vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.instagram_link_block {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.51);
+  color: #362419;
+  text-decoration: none;
+}
+
+.collection-list-wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.acuglo_button {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 20px;
+  background-color: #9b673c;
+  font-weight: 700;
+  text-align: left;
+}
+
+.button_block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px 0px;
+}
+
+.instagram_page_h1 {
+  font-family: Orkney, sans-serif;
+  text-align: center;
+}
+
+.intagram_post_block {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.collection-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.instagram_link_block-2 {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.51);
+  color: #362419;
+  text-decoration: none;
+}
+
+.collection-item-2 {
+  margin-bottom: 25px;
+}
+
+.blog_image_block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 450px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.rich-text-block {
+  text-decoration: none;
+}
+
+._2_block_ig_image {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 450px;
+  margin-top: 0px;
+  margin-right: 15px;
+  margin-left: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-position: 50% 50%;
+  background-size: cover;
+  color: #333;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 50% 50%;
+  object-position: 50% 50%;
+}
+
+.heading-15 {
+  font-family: Orkney, sans-serif;
+}
+
+.heading-16 {
+  font-family: Orkney, sans-serif;
+}
+
+.heading-17 {
+  font-family: Orkney, sans-serif;
+}
+
+.heading-18 {
+  font-family: Orkney, sans-serif;
+}
+
+.heading-19 {
+  font-family: Orkney, sans-serif;
+}
+
+.heading-20 {
+  font-family: Orkney, sans-serif;
+}
+
+.heading-21 {
+  font-family: Orkney, sans-serif;
+}
+
+.heading-22 {
+  font-family: Orkney, sans-serif;
+}
+
+.heading-23 {
+  font-family: Orkney, sans-serif;
+}
+
+.heading-24 {
+  font-family: Orkney, sans-serif;
+}
+
+.heading-25 {
+  font-family: Orkney, sans-serif;
+}
+
+.heading-26 {
+  font-family: Orkney, sans-serif;
+}
+
+.heading-27 {
+  font-family: Orkney, sans-serif;
+}
+
+.heading-28 {
+  font-family: Orkney, sans-serif;
+}
+
+.heading-29 {
+  font-family: Orkney, sans-serif;
+}
+
+.heading-30 {
+  font-family: Orkney, sans-serif;
+}
+
+.heading-31 {
+  font-family: Orkney, sans-serif;
+}
+
+.service_detail_page {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  color: #362419;
+}
+
+.acupuncture_hero_section {
+  height: 60vh;
+  padding-top: 0px;
+  background-image: url('../images/white-painted-concrete-wall-made-of-cubes-with-tiled-floor.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.service_text_block {
+  margin-top: 155px;
+}
+
+.microfacial_hero_section {
+  height: 60vh;
+  padding-top: 0px;
+  background-image: url('../images/microneedling-burbank-acuglo.jpg');
+  background-position: 50% 0%;
+  background-size: cover;
+}
+
+.scalp_acupuncture_hero_section {
+  height: 60vh;
+  padding-top: 0px;
+  background-image: url('../images/white-painted-concrete-wall-made-of-cubes-with-tiled-floor.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.cupping_hero_section {
+  height: 60vh;
+  padding-top: 0px;
+  background-image: url('../images/white-painted-concrete-wall-made-of-cubes-with-tiled-floor.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.herbal_medicine_hero_section {
+  height: 60vh;
+  padding-top: 0px;
+  background-image: url('../images/white-painted-concrete-wall-made-of-cubes-with-tiled-floor.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.moxibustion_hero_section {
+  height: 60vh;
+  padding-top: 0px;
+  background-image: url('../images/white-painted-concrete-wall-made-of-cubes-with-tiled-floor.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.auricular_acupuncture_hero_section {
+  height: 60vh;
+  padding-top: 0px;
+  background-image: url('../images/white-painted-concrete-wall-made-of-cubes-with-tiled-floor.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.electro_lipolysis_hero_section {
+  height: 60vh;
+  padding-top: 0px;
+  background-image: url('../images/white-painted-concrete-wall-made-of-cubes-with-tiled-floor.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.telehealth_hero_section {
+  height: 60vh;
+  padding-top: 0px;
+  background-image: url('../images/white-painted-concrete-wall-made-of-cubes-with-tiled-floor.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.service_card_img_light_therapy {
+  min-height: 175px;
+  margin-top: 15px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background-image: url('../images/light-therapy_acuglo.jpg');
+  background-position: 50% 67.5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(0deg) translate3d(0px, 0px, 20px);
+  transform: rotate(0deg) translate3d(0px, 0px, 20px);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.service_card_img_microneedling {
+  min-height: 175px;
+  margin-top: 15px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background-image: url('../images/microneedling_acuglo.jpg');
+  background-position: 50% 67.5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(0deg) translate3d(0px, 0px, 20px);
+  transform: rotate(0deg) translate3d(0px, 0px, 20px);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.service_card_img_nano_needling {
+  min-height: 175px;
+  margin-top: 15px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background-image: url('../images/nano-needling-acuglo.jpg');
+  background-position: 50% 67.5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(0deg) translate3d(0px, 0px, 20px);
+  transform: rotate(0deg) translate3d(0px, 0px, 20px);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.nano_needling_hero_section {
+  height: 60vh;
+  padding-top: 0px;
+  background-image: url('../images/white-painted-concrete-wall-made-of-cubes-with-tiled-floor.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.light_therapy_hero_section {
+  height: 60vh;
+  padding-top: 0px;
+  background-image: url('../images/white-painted-concrete-wall-made-of-cubes-with-tiled-floor.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.slider {
+  height: 450px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #f8f6f1;
+}
+
+.slide {
+  height: 450px;
+}
+
+.mask {
+  height: 450px;
+}
+
+.slider-mobile {
+  display: none;
+  height: 450px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #f8f6f1;
+}
+
+._2_block_h3 {
+  margin-bottom: 20px;
+  color: #362419;
+  font-size: 34px;
+  line-height: 1.1px;
+}
+
+.about_para {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  color: #362419;
+}
+
+.acuglo_link {
+  color: #9b673c;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+._2_block_row_reverse {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+._2_block_row_cart {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.grid {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.heading {
+  color: #362419;
+  text-align: center;
+}
+
+.form-block-3 {
+  padding: 0px;
+  color: #000;
+}
+
+.field-label-2 {
+  color: #362419;
+}
+
+.field-label-3 {
+  color: #362419;
+}
+
+.field-label-6 {
+  color: #362419;
+}
+
+.heading-32 {
+  color: #9b673c;
+}
+
+.faq-q-text {
+  font-weight: 700;
+}
+
+.faq-answer {
+  overflow: hidden;
+  padding-left: 45px;
+  border-bottom: 1px solid rgba(45, 62, 80, 0.12);
+}
+
+.faq-answer-text {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.faq-plus {
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #9b673c;
+}
+
+.faq_question {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.faq-plus-l {
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  border-radius: 3px;
+  background-color: #9b673c;
+}
+
+.faq_plus_wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  margin-right: 25px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.faq_block {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.center {
+  text-align: center;
+}
+
+.image_divide {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.intro_block {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.gallery_block {
+  margin: 10vh 0px;
+}
+
+.services_gallery_grid {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.panel_block {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+._2_block_micro_1 {
+  display: block;
+  width: 50%;
+  height: 375px;
+  margin: 0px 15px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url('../images/how-microneedling-works-acuglo.jpg');
+  background-position: 50% 50%;
+  background-size: contain;
+  color: #333;
+}
+
+._2_block_micro_2 {
+  display: block;
+  width: 50%;
+  height: 375px;
+  margin: 0px 15px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url('../images/collagen-induction-therapy.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  color: #333;
+}
+
+.pricing_block {
+  display: none;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.pricing_grid {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #f8f6f1;
+}
+
+.price_h4 {
+  text-align: center;
+}
+
+.price_line {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  color: #362419;
+  font-weight: 700;
+  text-align: center;
+}
+
+.price_details {
+  color: #9b673c;
+  text-align: center;
+}
+
+.price_block {
+  min-height: 1vh;
+  margin-bottom: 50px;
+}
+
+._2_block_approach {
+  display: block;
+  width: 50%;
+  height: 375px;
+  margin: 0px 15px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url('../images/shutterstock_605471888.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #333;
+}
+
+._2_block_approach.photo_block {
+  height: 375px;
+  background-image: url('../images/microneedling-collagen-induction-therapy.jpg');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 1280px) {
@@ -4012,6 +4577,16 @@
 @media screen and (max-width: 991px) {
   .blog_section {
     padding-top: 100px;
+  }
+
+  ._2_block_row {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  ._2_block {
+    height: auto;
   }
 
   .footer {
@@ -4047,10 +4622,12 @@
     text-align: left;
   }
 
-  .nav_logo_image {
-    display: block;
-    margin-top: 7px;
-    margin-bottom: 7px;
+  ._35_block {
+    padding: 0px 10px 10px;
+  }
+
+  ._65_block {
+    padding: 0px 10px 10px;
   }
 
   .section_h2 {
@@ -4095,7 +4672,9 @@
   }
 
   .service_card_img_herbs {
-    min-height: 200px;
+    width: 100px;
+    height: 100px;
+    min-height: 0px;
   }
 
   .link-block.w--current {
@@ -4110,35 +4689,51 @@
   }
 
   .service_card_img_acupuncture {
-    min-height: 200px;
+    width: 100px;
+    height: 100px;
+    min-height: 0px;
   }
 
   .service_card_img_cupping {
-    min-height: 200px;
+    width: 100px;
+    height: 100px;
+    min-height: 0px;
   }
 
   .service_card_img_moxa {
-    min-height: 200px;
+    width: 100px;
+    height: 100px;
+    min-height: 0px;
   }
 
   .service_card_img_auricular {
-    min-height: 200px;
+    width: 100px;
+    height: 100px;
+    min-height: 0px;
   }
 
   .service_card_img_electrostim {
-    min-height: 200px;
+    width: 100px;
+    height: 100px;
+    min-height: 0px;
   }
 
   .service_card_img_telehealth {
-    min-height: 200px;
+    width: 100px;
+    height: 100px;
+    min-height: 0px;
   }
 
   .service_card_img_facial {
-    min-height: 200px;
+    width: 100px;
+    height: 100px;
+    min-height: 0px;
   }
 
   .service_card_img_scalp {
-    min-height: 200px;
+    width: 100px;
+    height: 100px;
+    min-height: 0px;
   }
 
   ._25_block {
@@ -4152,18 +4747,6 @@
 
   .footer_icon_link {
     font-size: 18px;
-  }
-
-  .post-collection {
-    width: 100%;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-
-  .post-item {
-    width: 43%;
   }
 
   .product_preview_h3 {
@@ -4180,10 +4763,18 @@
     line-height: 1.2em;
   }
 
-  .div-block {
-    width: 200px;
-    height: 200px;
+  .product_image_block {
+    width: 150px;
+    height: 150px;
     min-width: auto;
+  }
+
+  .product {
+    width: 45%;
+    margin-bottom: 25px;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 
   .footer_llst_item {
@@ -4216,6 +4807,84 @@
     -ms-flex-pack: center;
     justify-content: center;
     text-align: left;
+  }
+
+  .blog_card_h3 {
+    height: 100px;
+  }
+
+  .blog_container {
+    width: 90vw;
+  }
+
+  .blog-collection {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+  }
+
+  .blog_image {
+    height: 200px;
+  }
+
+  .blog_image_block {
+    height: 250px;
+  }
+
+  .service_card_img_light_therapy {
+    width: 100px;
+    height: 100px;
+    min-height: 0px;
+  }
+
+  .service_card_img_microneedling {
+    width: 100px;
+    height: 100px;
+    min-height: 0px;
+  }
+
+  .service_card_img_nano_needling {
+    width: 100px;
+    height: 100px;
+    min-height: 0px;
+  }
+
+  .slider {
+    height: 300px;
+  }
+
+  .slide {
+    height: 300px;
+  }
+
+  .mask {
+    height: 300px;
+  }
+
+  .slider-mobile {
+    height: 300px;
+  }
+
+  .image_divide {
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+  }
+
+  .panel_block {
+    display: block;
+    height: auto;
+  }
+
+  .divide_block {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+
+  ._2_block_approach {
+    height: 515px;
   }
 }
 
@@ -4295,11 +4964,13 @@
   }
 
   ._35_block {
+    display: none;
     width: 100%;
   }
 
   ._65_block {
     width: 100%;
+    padding: 0px;
   }
 
   .what_to_expect_section {
@@ -4314,16 +4985,66 @@
   }
 
   .service_card {
-    width: 350px;
+    width: 75%;
+    height: 400px;
     max-width: 100%;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-left: auto;
   }
 
   .service_card_title {
     height: 45px;
   }
 
+  .service_card_img_herbs {
+    width: 100%;
+    height: 250px;
+  }
+
+  .service_card_button {
+    display: none;
+  }
+
   .service_card_img_acupuncture {
-    min-height: 250px;
+    width: 100%;
+    height: 250px;
+    min-height: 0px;
+  }
+
+  .service_card_img_cupping {
+    width: 100%;
+    height: 250px;
+  }
+
+  .service_card_img_moxa {
+    width: 100%;
+    height: 250px;
+  }
+
+  .service_card_img_auricular {
+    width: 100%;
+    height: 250px;
+  }
+
+  .service_card_img_electrostim {
+    width: 100%;
+    height: 250px;
+  }
+
+  .service_card_img_telehealth {
+    width: 100%;
+    height: 250px;
+  }
+
+  .service_card_img_facial {
+    width: 100%;
+    height: 250px;
+  }
+
+  .service_card_img_scalp {
+    width: 100%;
+    height: 250px;
   }
 
   .image-9 {
@@ -4371,28 +5092,9 @@
     align-items: center;
   }
 
-  .post-collection {
-    width: 100vw;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-
-  .post-item {
-    height: 300px;
-    margin-right: 12px;
-    margin-left: 12px;
-  }
-
   .blog_feed_section {
     padding-top: 75px;
     padding-bottom: 75px;
-  }
-
-  .product_grid {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
   }
 
   .product_image {
@@ -4415,9 +5117,14 @@
     font-size: 1.7em;
   }
 
-  .div-block {
+  .product_image_block {
     width: 250px;
     height: 250px;
+  }
+
+  .product {
+    width: 75%;
+    margin-bottom: 35px;
   }
 
   .footer_grid_2_block {
@@ -4442,6 +5149,204 @@
     -ms-flex-align: center;
     align-items: center;
   }
+
+  .home_link_block {
+    width: 75%;
+    margin-bottom: 25px;
+  }
+
+  .blog-collection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .instagram_link_block {
+    width: 75%;
+    margin-bottom: 25px;
+  }
+
+  .collection_instagram_item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .ig-collection {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .collection-list-wrapper-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .collection-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 0px;
+    padding-left: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .instagram_link_block-2 {
+    width: 75%;
+    margin-bottom: 25px;
+  }
+
+  ._2_block_ig_image {
+    width: 100%;
+  }
+
+  .microfacial_hero_section {
+    background-position: 0% 50%;
+  }
+
+  .service_card_img_light_therapy {
+    width: 100%;
+    height: 250px;
+  }
+
+  .service_card_img_microneedling {
+    width: 100%;
+    height: 250px;
+  }
+
+  .service_card_img_nano_needling {
+    width: 100%;
+    height: 250px;
+  }
+
+  .slider {
+    display: none;
+  }
+
+  .slide {
+    height: 475px;
+  }
+
+  .mask {
+    height: 475px;
+  }
+
+  .slider-mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 475px;
+    margin-top: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+
+  ._2_block_row_reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  ._2_block_row_cart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  ._2_block_micro_1 {
+    width: 100%;
+  }
+
+  ._2_block_micro_2 {
+    width: 100%;
+  }
+
+  ._2_block_approach {
+    width: 100%;
+    height: 375px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -4461,11 +5366,31 @@
   }
 
   ._2_block_row {
+    margin-top: 0px;
+    margin-bottom: 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  ._2_block {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  ._2_block.photo_block {
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   ._30_block {
@@ -4562,18 +5487,8 @@
     text-align: center;
   }
 
-  .nav_logo_image {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-  }
-
   ._65_block {
     width: 100%;
-  }
-
-  .paragraph-4 {
-    text-align: center;
   }
 
   ._2_block_row_hero {
@@ -4583,6 +5498,10 @@
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+  }
+
+  .pre_text {
+    margin-top: 0px;
   }
 
   .solo_para {
@@ -4607,10 +5526,6 @@
     justify-content: center;
   }
 
-  .italic-text-7 {
-    text-align: center;
-  }
-
   .menu-button {
     width: 20%;
     margin-left: 0px;
@@ -4630,9 +5545,10 @@
   }
 
   .service_card {
-    width: 325px;
-    margin-right: 20px;
-    margin-left: 20px;
+    width: 100%;
+    height: 425px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
   .link-block {
@@ -4673,40 +5589,6 @@
     height: auto;
   }
 
-  .scrolling-collection-wrap {
-    height: 5vh;
-  }
-
-  .post-collection {
-    padding-top: 0px;
-    padding-right: 16px;
-    padding-left: 16px;
-    -webkit-align-content: flex-start;
-    -ms-flex-line-pack: start;
-    align-content: flex-start;
-  }
-
-  .post-item {
-    width: 100%;
-    height: 200px;
-    margin: 9px 0px;
-  }
-
-  .post-item:hover {
-    box-shadow: 0 9px 19px 2px rgba(0, 0, 0, 0.1);
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-  }
-
-  .card-heading {
-    font-size: 1.2rem;
-  }
-
-  .autor-text {
-    font-size: 0.8rem;
-  }
-
   .form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4732,7 +5614,7 @@
   }
 
   .product_preview_h3 {
-    height: 35px;
+    height: auto;
   }
 
   .hero_logo {
@@ -4758,9 +5640,21 @@
     line-height: 30px;
   }
 
-  .div-block {
+  .product_preview_add_to_cart_button {
+    display: block;
+  }
+
+  .product_image_block {
     width: 250px;
     height: 250px;
+  }
+
+  .product {
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+    margin-bottom: 35px;
+    margin-left: 0px;
   }
 
   .footer_grid_2_block {
@@ -4775,11 +5669,6 @@
     font-size: 15px;
     line-height: 22.5px;
     text-align: center;
-  }
-
-  .link_white {
-    font-size: 15px;
-    line-height: 22.5px;
   }
 
   .tabs-menu {
@@ -4842,6 +5731,166 @@
 
   .icon-2 {
     color: #362419;
+  }
+
+  .blog_card_h3 {
+    height: auto;
+  }
+
+  .home_link_block {
+    width: 100%;
+  }
+
+  .blog_container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .instagram_link_block {
+    width: 100%;
+  }
+
+  .instagram_link_block-2 {
+    width: 100%;
+  }
+
+  .blog_image_block {
+    height: 200px;
+  }
+
+  .service_text_block {
+    margin-top: 175px;
+  }
+
+  .microfacial_hero_section {
+    background-position: 0% 50%;
+    background-size: cover;
+  }
+
+  ._2_block_h3 {
+    font-size: 28px;
+  }
+
+  ._2_block_row_reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  ._2_block_row_cart {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .faq_block {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .intro_block {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .gallery_block {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .services_gallery_grid {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .panel_block {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  ._2_block_micro_1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  ._2_block_micro_2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .pricing_block {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .pricing_grid {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  .divide_block {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  ._2_block_approach {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  ._2_block_approach.photo_block {
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 }
 
@@ -4968,10 +6017,192 @@
   align-self: start;
 }
 
+#w-node-f4176deb-9431-4403-b2c3-6caec12ab2d5-842543b5 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_85bccb31-01db-d649-5bbb-61876673aeec-842543b5 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_75de3574-5dcf-467c-aeb6-7b67f0351926-842543b5 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-f76aba51-e09f-69b0-72bb-2e98bfe79c4a-842543b5 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_387287d0-965b-eb76-c3df-03964157c29f-842543b5 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_5af4183c-a721-088a-4695-ad0356100dc3-842543b5 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-dc50ab52-9a91-ca86-7788-670c530353fd-842543b5 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_86c218d9-c26b-1545-7484-23a5cc0b37ed-842543b5 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_10677a2b-e315-b733-c566-71b57ae9497e-842543b5 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-cdbda22a-abf8-8e58-2308-a57c900aff86-842543b5 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-ab625c54-6a61-b4ac-97f4-840e0ac5c409-842543b5 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-bb4796a4-c192-9cb2-53e1-2d2d2eba24c9-842543b5 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-a06597bb-a574-43d9-34ee-6acdb601641f-842543b5 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-c30e22df-b618-6a15-4927-3354567d6128-842543b5 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
 @font-face {
   font-family: 'Fa brands 400';
   src: url('../fonts/fa-brands-400.eot') format('embedded-opentype'), url('../fonts/fa-brands-400.woff') format('woff'), url('../fonts/fa-brands-400.ttf') format('truetype'), url('../fonts/fa-brands-400.svg') format('svg');
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Orkney';
+  src: url('../fonts/Orkney-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Orkney';
+  src: url('../fonts/Orkney-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Orkney';
+  src: url('../fonts/Orkney-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Orkney';
+  src: url('../fonts/Orkney-Bold.otf') format('opentype');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
